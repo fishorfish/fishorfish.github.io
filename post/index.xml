@@ -6,18 +6,18 @@
     <description>Recent content in Posts on The theory of the cutlet explosion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 May 2020 23:30:28 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 20:30:28 +0300</lastBuildDate>
     
 	<atom:link href="https://fishorfish.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Тестирование отправки уведомления в slack</title>
-      <link>https://fishorfish.github.io/post/slack-test/</link>
-      <pubDate>Mon, 18 May 2020 23:30:28 +0300</pubDate>
+      <title>Автоматизируй это!</title>
+      <link>https://fishorfish.github.io/post/automation/</link>
+      <pubDate>Wed, 20 May 2020 20:30:28 +0300</pubDate>
       
-      <guid>https://fishorfish.github.io/post/slack-test/</guid>
-      <description>Добавление уведомлений о новых постах в Slack </description>
+      <guid>https://fishorfish.github.io/post/automation/</guid>
+      <description>Автоматизируй это!  Предположим, вы написали свой блог и хотите, чтобы ваши друзья стали первыми жертвами вашего приобретённого писательского таланта, но скидывать ссылку каждый раз на пост очень лениво.</description>
     </item>
     
     <item>
