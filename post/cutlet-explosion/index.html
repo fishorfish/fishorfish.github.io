@@ -55,7 +55,7 @@
         
         <div class="info">
           <i class="fa fa-sun-o"></i><span class="date">Sun, May 17, 2020</span>
-          <i class="fa fa-clock-o"></i><span class="reading-time">1-minute read</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">2-minute read</span>
         </div>
         
         </div>
@@ -72,8 +72,12 @@ Anatole еще не знал на тот момент, что на него лю
 <p>Итак, создаем два репозитория:</p>
 <ol>
 <li>Приватный с любым упоротым именем проекта</li>
-<li>Публичный с именем USERNAME.github.io
-Клонируем приватный репозиторий в директорию, которая хранит исходный код с шаблоном и проверяем, что это Анатоле завелся из новой папки.</li>
+<li>Публичный с именем USERNAME.github.io</li>
+<li>Клонируем приватный репозиторий с гитхаба в директорию, которая хранит исходный код с шаблоном и проверяем, что это Анатоле завелся из новой папки.</li>
+<li>Клонируем публичный репозиторий с гитхаба в любую директорию, делаем любой пуш на гитхаб, чтобы репозиторий не был пустым. После пуша удаляем директорию, она нам больше не нужна.</li>
+<li>Генерим папку public в директории из приватного репозитория командой hugo</li>
+<li>Выполняем команду git submodule add -b master <a href="https://github.com/">https://github.com/</a><!-- raw HTML omitted -->/<!-- raw HTML omitted -->.github.io.git public.</li>
+<li>Выполняем команду ./deploy.sh</li>
 </ol>
 
     </div>
