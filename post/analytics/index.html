@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title> Ezdakova Irina | Аналитика </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://fishorfish.github.io/css/style.css" type="text/css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <base href="https://fishorfish.github.io">
+    
+    <link rel="shortcut icon" href="https://fishorfish.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://fishorfish.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fishorfish.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fishorfish.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://fishorfish.github.io/post/analytics/">
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://fishorfish.github.io/images/profile.jpg" alt="profile picture" style="width:127px;border-radius: 50%;">
+        <h3 title=""><a href="/">I&#39;m a qa and I code by cat paws</a></h3>
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Ezdakova Irina 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <div class="nav">
+        
+        
+        <li><a  href="/" title="">Home</a></li>
+
+        
+        <li><a  href="/post/" title="">Posts</a></li>
+
+        
+    </div>
+</div>
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Аналитика
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">Sat, May 23, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">2-minute read</span>
+        </div>
+        
+        </div>
+
+    <p>Если долго работать в отделе маркетинга, то можно выучить такие слова как &ldquo;метки, аналитика, маркетинговое касание&hellip;&quot;, но в моем случае - со стороны разработки.</p>
+<p>Я смотрю на это глазами QA, а пора бы попробовать подключить аналитику к своему маленькому творению и понять, как это видят аналитики изнутри.</p>
+<p><strong>ver.1: когда еще ничего не знаешь, но подключить хочется</strong></p>
+<ol>
+<li>
+<p>Подключаю красавчика №1 - Google Analytics <code>https://analytics.google.com/</code>
+Процесс максимально простой: регистрируемся, создаем аккаунт, добавляем в него наш сайт, клац-клац и готово. Добавляем кусок скрипта, полученный на выходе в аккаунте, себе в файл с версткой, в тег <code>&lt;head&gt;</code>, и проверяем работу тега путем просмотра количества посетителей, которые сейчас активны на сайте.</p>
+</li>
+<li>
+<p>Подключаю красавчика №2 - Яндекс.Метрика <code>https://metrika.yandex.ru/</code>
+Процесс такой же простой, как и предыдущий: регистрируемся, делаем те же действия, что и выше, проверяем работу тега путем просмотра количества посетителей на сайте.</p>
+</li>
+</ol>
+<p><strong>ver.2: продвинутый пользователь</strong></p>
+<p>А зачем мне так много тегов в <code>&lt;head&gt;</code>?</p>
+<p>Давайте все сольем в единый GTM (google tag manager - система для удобного управления JavaScript и HTML тегами) и будет нам счастье. А вот и мануал подъехал <code>https://www.owox.ru/blog/use-cases/what-is-google-tag-manager/</code></p>
+<p>Выполняем все шаги из мануала, создаем контейнер, добавляем туда свой сайт с тегами, и вуаля - все готово.</p>
+<p>Теперь все теги хранятся в едином контейнере, не нужно добавлять/удалять/менять теги в файлах проекта, достаточно просто внести коррективы в аккаунте GTM.</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+      </div>
+    </div>
+
+    
+           
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-appear.min.js"></script><script type="text/javascript" src="https://fishorfish.github.io/js/medium-zoom.min.js"></script>
+<script>
+	mediumZoom(document.querySelectorAll('div.post-content img'), {
+        background: '#fff'
+    });
+</script>
+<link rel="stylesheet" href="https://fishorfish.github.io/css/medium-zoom.css" type="text/css"></html></body>
+
+</html>
