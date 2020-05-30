@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title> Ezdakova Irina | Приемочное автотестирование </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://fishorfish.github.io/css/style.css" type="text/css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <base href="https://fishorfish.github.io">
+    
+    <link rel="shortcut icon" href="https://fishorfish.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://fishorfish.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fishorfish.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fishorfish.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://fishorfish.github.io/post/autotests/">
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://fishorfish.github.io/images/profile.jpg" alt="profile picture" style="width:127px;border-radius: 50%;">
+        <h3 title=""><a href="/">I&#39;m a qa and I code by cat paws</a></h3>
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Ezdakova Irina 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <div class="nav">
+        
+        
+        <li><a  href="/" title="">Home</a></li>
+
+        
+        <li><a  href="/post/" title="">Posts</a></li>
+
+        
+    </div>
+</div>
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Приемочное автотестирование
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">Wed, May 27, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">2-minute read</span>
+        </div>
+        
+        </div>
+
+    <p>Была проблема: ручной регресс, он же - монотонный, рутинный, раздражающий, отнимающий время, процесс. Иногда регресса было по 3 штуки в день, итого: 3 * ~2 часа = 6 рабочих часов в урну.</p>
+<p>Конечно не совсем в урну, мы приносим пользу отделу маркетинга, который завязан на нашем тестировании и проверке качества запускаемого продукта, но для профессионального развития - это потраченные 6 часов жизни.</p>
+<p>Пришла идея - автоматизировать это!</p>
+<h6 id="господь-занеси-эту-идею-обратно-в-умы-придумавших-мы-замучались">(Господь, занеси эту идею обратно в умы придумавших, мы замучались)</h6>
+<p>Стек - тестовый фреймворк protractor, который специально заточен под AngularJS-проекты.</p>
+<p>Человекоресурсы для реализации этой идеи - один e2e автотестировщик и я, умеющая лапками клепать api-автотесты на php.</p>
+<p>Задача - <del>убить всех людей</del> сделать работу чуть проще, а мир добрее.</p>
+<p>Время - полтора месяца (ну а что вы хотели, мы же нубасы).</p>
+<p>Итак, у регресса есть название - лендинги.</p>
+<p>Лендинг - это веб-страница, основной задачей которой является сбор контактных данных целевой аудитории. Используется для усиления эффективности рекламы и увеличения аудитории. Целевая страница обычно содержит информацию о товаре или услуге.
+Наш лендинг обычно имеет две странички и 4 формы подачи заявки, и тестирование подразумевает проверку подачи заявок со всех форм, передачу меток(как вшитых в лендинг, так и тех, с которыми пришел ученик), активацию промокода, отправку и получение писем от нашей рекламной кампании и т.д.</p>
+<p>План действий:</p>
+<ol>
+<li>Отобрать типы лендингов, которые чаще всего встречаются</li>
+<li>Написать на них тесты-шаблоны</li>
+<li>Запустить тесты в джобе, которая будет прогоняться в CI Jenkins</li>
+<li><del>Радоваться</del></li>
+<li>Держать в джобе тесты первые 2 недели рекламной кампании, чтобы словить баги, если они появятся. После двух недель убираем, потому что поддержка теста требует время (есть причины падения, не зависящие от самого теста), а лендинг доживает свои дни и посещения уже не такие активные.</li>
+</ol>
+<p>Все пункты из этого списка выполнены, что мы имеем:</p>
+<ol>
+<li>Тестировать входящие лендинги стало проще, на лету можно внести входящие параметры в тест-шаблон и запустить его прогоняться</li>
+<li>Поддержка тестов в джобе оказалось не самой простой, часто приходится разбираться с падениями.</li>
+<li>Последний успешный прогон был зафиксирован 9 мая, очень грустно вообще.</li>
+<li>Писать тесты на внешний продукт, который может нестабильно отрабатывать - также очень грустно. Речь идет о конструкторах лендингов - тильде и лпгенераторе.</li>
+</ol>
+<p>Comming soon&hellip;</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+      </div>
+    </div>
+
+    
+           
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-appear.min.js"></script><script type="text/javascript" src="https://fishorfish.github.io/js/medium-zoom.min.js"></script>
+<script>
+	mediumZoom(document.querySelectorAll('div.post-content img'), {
+        background: '#fff'
+    });
+</script>
+<link rel="stylesheet" href="https://fishorfish.github.io/css/medium-zoom.css" type="text/css"></html></body>
+
+</html>
