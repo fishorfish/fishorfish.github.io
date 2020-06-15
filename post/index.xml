@@ -6,10 +6,29 @@
     <description>Recent content in Posts on The theory of the cutlet explosion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 May 2020 22:10:16 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2020 23:19:50 +0300</lastBuildDate>
     
 	<atom:link href="https://fishorfish.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20200603_http</title>
+      <link>https://fishorfish.github.io/post/20200603_http/</link>
+      <pubDate>Mon, 15 Jun 2020 23:19:50 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/20200603_http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Content-type в тестах</title>
+      <link>https://fishorfish.github.io/post/http/</link>
+      <pubDate>Wed, 03 Jun 2020 23:30:16 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/http/</guid>
+      <description>Минутка новых познаний.
+Что имеется: опыт написания апи-тестов на php.</description>
+    </item>
     
     <item>
       <title>Из чего же наши тесты?</title>
@@ -28,15 +47,6 @@
       
       <guid>https://fishorfish.github.io/post/autotests/</guid>
       <description>Была проблема: ручной регресс, он же - монотонный, рутинный, раздражающий, отнимающий время, процесс.</description>
-    </item>
-    
-    <item>
-      <title>Аналитика</title>
-      <link>https://fishorfish.github.io/post/analytics/</link>
-      <pubDate>Sat, 23 May 2020 23:49:16 +0300</pubDate>
-      
-      <guid>https://fishorfish.github.io/post/analytics/</guid>
-      <description>Если долго работать в отделе маркетинга, то можно выучить такие слова, как &amp;ldquo;метки, аналитика, маркетинговое касание&amp;hellip;&amp;quot;, но в моем случае - со стороны разработки.</description>
     </item>
     
     <item>
