@@ -32,6 +32,15 @@
     </item>
     
     <item>
+      <title>Приемочное автотестирование</title>
+      <link>https://fishorfish.github.io/post/autotests/</link>
+      <pubDate>Wed, 27 May 2020 22:10:16 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/autotests/</guid>
+      <description>Была проблема: ручной регресс, он же - монотонный, рутинный, раздражающий, отнимающий время, процесс.</description>
+    </item>
+    
+    <item>
       <title>Аналитика</title>
       <link>https://fishorfish.github.io/post/analytics/</link>
       <pubDate>Sat, 23 May 2020 23:49:16 +0300</pubDate>
@@ -56,15 +65,6 @@
       
       <guid>https://fishorfish.github.io/post/cutlet-explosion/</guid>
       <description>Почему «Котлетный взрыв»? Хотите вы этого или нет, а я назову свой блог «Теория котлетного взрыва», потому что примерно так выглядят мои попытки запихнуть в свою голову разные куски информации и быстро ее усвоить.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://fishorfish.github.io/post/20200527_e2e/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://fishorfish.github.io/post/20200527_e2e/</guid>
-      <description></description>
     </item>
     
   </channel>
