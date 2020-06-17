@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title> Ezdakova Irina | Из чего же наши тесты? </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://fishorfish.github.io/css/style.css" type="text/css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <base href="https://fishorfish.github.io">
+    
+    <link rel="shortcut icon" href="https://fishorfish.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://fishorfish.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fishorfish.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fishorfish.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://fishorfish.github.io/post/tests/">
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://fishorfish.github.io/images/profile.jpg" alt="profile picture" style="width:127px;border-radius: 50%;">
+        <h3 title=""><a href="/">I&#39;m a qa and I code by cat paws</a></h3>
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Ezdakova Irina 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <div class="nav">
+        
+        
+        <li><a  href="/" title="">Главная</a></li>
+
+        
+        <li><a  href="/post/" title="">Записи</a></li>
+
+        
+        <li><a  href="/facts/" title="">Фактики</a></li>
+
+        
+    </div>
+</div>
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Из чего же наши тесты?
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">Sat, May 30, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">2-minute read</span>
+        </div>
+        
+        </div>
+
+    <p><strong>Что мы пишем и как?</strong></p>
+<p>Ранее в репозитории тесты хранились в одном файле - файле спецификации, который являлся хранилищем данных тестируемой страницы и сценарием одновременно.</p>
+<p>Мы решили видоизменить представление о тестах и решили в их основе использовать паттерн Page Object (PO).</p>
+<p><strong>Итого на один лендинг у нас создается не один файл, как раньше, а три:</strong></p>
+<ol>
+<li>Точка входа (в нашем случае спека), в которую вносятся все локаторы внешних элементов и url страницы.</li>
+<li>PO лендинга</li>
+<li>Сценарий теста</li>
+</ol>
+<p><strong>Алгоритм прогона теста такой:</strong></p>
+<ul>
+<li>В точке входа подключается объект PO, в который передаются локаторы; в сценарий передаем объект РО;</li>
+<li>РО - это класс, в котором локаторы объявляются как свойства, которые затем вызываются в методах. Методы, в свою очередь, описывают все типовые действия на странице: заполнение каждого поля в форме, сабмит формы, свитч между формами, проверка открытия ссылок на странице;</li>
+<li>Как уже было сказано, в сценарий передается объект лендинга, поэтому сценарий обращается именно к нему с целью вызвать метод, который будет производить действие на странице.</li>
+</ul>
+<p>За счет этого подхода сократилось количество кода в сценарии и снизился процент копипаста от теста к тесту, потому что все однотипные действия вынесены в отдельный класс РО.</p>
+<p><strong>Теперь, когда мы получаем типовую страницу в тестирование, нам нужно произвести минимум действий:</strong></p>
+<ul>
+<li>в точке входа поменять url страницы и локаторы</li>
+<li>запустить тест</li>
+</ul>
+<p>Звучит идеально, но не без проблем, с которыми мы столкнулись: например, разное поведение теста на одном и том же шаге на разных лендингах. Этот момент нам еще предстоит отрефакторить, но это уже совсем другая история.</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+      </div>
+    </div>
+
+    
+           
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-appear.min.js"></script><script type="text/javascript" src="https://fishorfish.github.io/js/medium-zoom.min.js"></script>
+<script>
+	mediumZoom(document.querySelectorAll('div.post-content img'), {
+        background: '#fff'
+    });
+</script>
+<link rel="stylesheet" href="https://fishorfish.github.io/css/medium-zoom.css" type="text/css"></html></body>
+
+</html>
