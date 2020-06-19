@@ -31,6 +31,16 @@
     </item>
     
     <item>
+      <title>SQL</title>
+      <link>https://fishorfish.github.io/post/sql/</link>
+      <pubDate>Sat, 06 Jun 2020 00:30:16 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/sql/</guid>
+      <description>Заметки для себя:
+Самый простой способ сделать выборку из json поля бд - привести его к текстовому виду с помощью ::text и затем с помощью ILIKE (регистро-независимый LIKE) поискать значение, подставив его в скобки %текст_name%</description>
+    </item>
+    
+    <item>
       <title>Content-type</title>
       <link>https://fishorfish.github.io/post/http/</link>
       <pubDate>Wed, 03 Jun 2020 23:30:16 +0300</pubDate>
