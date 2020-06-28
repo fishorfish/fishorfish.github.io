@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title> Ezdakova Irina | SQL </title>
+    <title> Ezdakova Irina | Grafana </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://fishorfish.github.io/css/style.css" type="text/css">
@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://fishorfish.github.io/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://fishorfish.github.io/favicons/favicon-16x16.png">
 
-    <link rel="canonical" href="https://fishorfish.github.io/post/sql/">
+    <link rel="canonical" href="https://fishorfish.github.io/post/grafana/">
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
       <div class="title">
@@ -53,20 +53,21 @@
     <div class="post-content">
 
       <div class="post-title">
-        <h3>SQL
+        <h3>Grafana
         </h3>
         
         <div class="info">
-          <i class="fa fa-sun-o"></i><span class="date">Sat, Jun 6, 2020</span>
+          <i class="fa fa-sun-o"></i><span class="date">Wed, Jun 10, 2020</span>
           <i class="fa fa-clock-o"></i><span class="reading-time">1-minute read</span>
         </div>
         
         </div>
 
-    <p><strong>Заметки для самых маленьких:</strong></p>
-<p>Самый простой способ сделать выборку из json поля бд - привести его к текстовому виду с помощью <strong><code>::text</code></strong> и затем с помощью <code>ILIKE</code> (регистро-независимый LIKE) поискать значение, подставив его в скобки <code>%текст_name%</code></p>
-<p>Обращение к конкретным ключам в json, пример: <code>key#&gt;&gt;'{web,cookies,cookie_name}' = 'value'</code></p>
-<p>To be continued&hellip;</p>
+    <p>Первая попытка настроить дашборд.</p>
+<p>Для вывода на дашборд nginx-логов используется инструмент Grafana.</p>
+<p>В докеризированном проекте для вывода конкретного сервиса используется Query - appname:&ldquo;some_name&rdquo;, в недокеризированном - к файлу с логами.</p>
+<p>В пункте <code>Alias</code> можно вписать название алиаса, который будет ссылаться на наш Query в графе <code>Terms</code>, и затем по алиасу можно настраивать/фильтровать вывод результатов.</p>
+<p>Также можно вывести логи самого приложения - php контейнера.</p>
 
     </div>
     <div class="post-footer">

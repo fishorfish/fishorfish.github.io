@@ -31,12 +31,22 @@
     </item>
     
     <item>
+      <title>Grafana</title>
+      <link>https://fishorfish.github.io/post/grafana/</link>
+      <pubDate>Wed, 10 Jun 2020 19:30:16 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/grafana/</guid>
+      <description>Первая попытка настроить дашборд.
+Для вывода на дашборд nginx-логов используется инструмент Grafana.</description>
+    </item>
+    
+    <item>
       <title>SQL</title>
       <link>https://fishorfish.github.io/post/sql/</link>
       <pubDate>Sat, 06 Jun 2020 00:30:16 +0300</pubDate>
       
       <guid>https://fishorfish.github.io/post/sql/</guid>
-      <description>Заметки для себя:
+      <description>Заметки для самых маленьких:
 Самый простой способ сделать выборку из json поля бд - привести его к текстовому виду с помощью ::text и затем с помощью ILIKE (регистро-независимый LIKE) поискать значение, подставив его в скобки %текст_name%</description>
     </item>
     
