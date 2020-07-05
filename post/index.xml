@@ -17,7 +17,7 @@
       <pubDate>Wed, 10 Jun 2020 19:30:16 +0300</pubDate>
       
       <guid>https://fishorfish.github.io/post/grafana/</guid>
-      <description>Первая попытка настроить дашборд.
+      <description>Настройка дашбордов.
 Для вывода на дашборд nginx-логов используется инструмент Grafana.</description>
     </item>
     
