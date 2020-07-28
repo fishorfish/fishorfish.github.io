@@ -46,8 +46,9 @@
       <pubDate>Wed, 10 Jun 2020 19:30:16 +0300</pubDate>
       
       <guid>https://fishorfish.github.io/post/grafana/</guid>
-      <description>Настройка дашбордов.
-Для вывода на дашборд nginx-логов используется инструмент Grafana.</description>
+      <description>Настройка дашбордов
+Для мониторинга проектов мы используем инструмент Grafana.
+Мы использует три источника данных: Graphite, ELK (elasticsearch) и БД.</description>
     </item>
     
     <item>
