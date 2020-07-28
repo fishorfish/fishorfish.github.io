@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title> Ezdakova Irina | Allure </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://fishorfish.github.io/css/style.css" type="text/css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <base href="https://fishorfish.github.io">
+    
+    <link rel="shortcut icon" href="https://fishorfish.github.io/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://fishorfish.github.io/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fishorfish.github.io/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fishorfish.github.io/favicons/favicon-16x16.png">
+
+    <link rel="canonical" href="https://fishorfish.github.io/post/allure/">
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://fishorfish.github.io/images/profile.jpg" alt="profile picture" style="width:127px;border-radius: 50%;">
+        <h3 title=""><a href="/">I&#39;m a qa and I code by cat paws</a></h3>
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Ezdakova Irina 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <div class="nav">
+        
+        
+        <li><a  href="/" title="">Главная</a></li>
+
+        
+        <li><a  href="/post/" title="">Записи</a></li>
+
+        
+        <li><a  href="/facts/" title="">Фактики</a></li>
+
+        
+    </div>
+</div>
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Allure
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">Tue, Jun 16, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">1-minute read</span>
+        </div>
+        
+        </div>
+
+    <p><strong>Нужно больше отчетов богу отчетов!</strong></p>
+<p>Дабы понимать, имеем мы какой-то профит от прогона автотестов или нет, нужно собирать метрики.</p>
+<p>В случае моего места работы, процесс устроен так: джобы с автотестами запускаются в Jenkins и к ним крепятся сгренерированные примитичные html-отчеты. Так сложилось исторически.</p>
+<p>Данные отчеты не позволяют ориентироваться по шагам тестов, ошибкам и, тем более, не собирают метрики и не группируют их в графики.</p>
+<p>И тут появляется -&gt; <em>Allure</em>!</p>
+<p>Ну как появляется, он был установлен плагином в Jenkins еще два года назад, но его почему-то не использовали.</p>
+<p>Поразбиравшись с подключением аллюра к джобе, я написала доку для своих коллег, как за 2 минуты подключить сей прекрасный и красочный генератор отчетов к своим менее прекрасным и менее красочным тестам.</p>
+<p>Итак, если у вас уже установлен плагин Allure в вашей CI:</p>
+<ol>
+<li>Берем-с свою джобу и лезем в настроечки</li>
+<li>Добавляем в блок Post-Build Actions еще один action</li>
+<li>Выбираем в дропдауне <strong>Allure Report</strong></li>
+<li>Прописываем путь к папке, где будут лежать отчётики</li>
+<li>В блоке Build прописываем строку <code>rm -rf allure-results/ </code> после захода в вашу основную папку тестов</li>
+</ol>
+<p>Bingo</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+      </div>
+    </div>
+
+    
+           
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-appear.min.js"></script><script type="text/javascript" src="https://fishorfish.github.io/js/medium-zoom.min.js"></script>
+<script>
+	mediumZoom(document.querySelectorAll('div.post-content img'), {
+        background: '#fff'
+    });
+</script>
+<link rel="stylesheet" href="https://fishorfish.github.io/css/medium-zoom.css" type="text/css"></html></body>
+
+</html>
