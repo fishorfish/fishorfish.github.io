@@ -6,10 +6,19 @@
     <description>Recent content in Posts on The theory of the cutlet explosion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Jun 2020 14:55:16 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2020 19:30:16 +0300</lastBuildDate>
     
 	<atom:link href="https://fishorfish.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Автоматизация процессов</title>
+      <link>https://fishorfish.github.io/post/autoprocess/</link>
+      <pubDate>Thu, 25 Jun 2020 19:30:16 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/autoprocess/</guid>
+      <description>Вслед за прошлой статьей, хочу рассказать, про первые попытки автоматизировать процесс запуска автотестов и связку их с задачами в Jira.</description>
+    </item>
     
     <item>
       <title>Allure</title>
