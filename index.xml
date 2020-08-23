@@ -6,10 +6,19 @@
     <description>Recent content on The theory of the cutlet explosion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Jul 2020 16:30:16 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 19:30:16 +0300</lastBuildDate>
     
 	<atom:link href="https://fishorfish.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Канбан</title>
+      <link>https://fishorfish.github.io/post/kanban/</link>
+      <pubDate>Sat, 01 Aug 2020 19:30:16 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/kanban/</guid>
+      <description>А теперь перейдем к процессам насущным, работе в команде, потоку задач и всякому такому.</description>
+    </item>
     
     <item>
       <title>Внутренний QA Meetup</title>
