@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Codeception: installation</title>
+      <link>https://fishorfish.github.io/post/codception/</link>
+      <pubDate>Sat, 01 Aug 2020 19:30:16 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/codception/</guid>
+      <description>Для подключения к проекту фреймворка Codeception, необходимо выполнить несколько шагов:</description>
+    </item>
+    
+    <item>
       <title>Канбан</title>
       <link>https://fishorfish.github.io/post/kanban/</link>
       <pubDate>Sat, 01 Aug 2020 19:30:16 +0300</pubDate>
