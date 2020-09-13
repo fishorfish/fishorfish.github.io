@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title> Ezdakova Irina | Codeception: подключение </title>
+    <title> Ezdakova Irina | Codeception: подключение фикстур </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://fishorfish.github.io/css/style.css" type="text/css">
@@ -53,7 +53,7 @@
     <div class="post-content">
 
       <div class="post-title">
-        <h3>Codeception: подключение
+        <h3>Codeception: подключение фикстур
         </h3>
         
         <div class="info">
@@ -63,55 +63,27 @@
         
         </div>
 
-    <p>Для подключения к проекту фреймворка Codeception, необходимо выполнить несколько шагов:</p>
-<ol>
+    <ol>
 <li>
-<p>В папке проекта выполнить команду <code>composer require &quot;codeception/codeception=^2.5&quot; --dev</code></p>
+<p>Войти в контейнер/папку приложения и выполнить команду: <code>composer require --dev doctrine/doctrine-fixtures-bundle</code></p>
 </li>
 <li>
-<p>В случае, если в проекте нет папки tests, выполнить команду <code>vendor/bin/codecept bootstrap</code> для ее создания. Если в проекте такая папка уже есть, то поменять в конфиге <code>codeception.yml</code> пути для инициализации новой папки.</p>
+<p>В папке src/DataFixtures создать класс AbstractFixture.php</p>
 </li>
 <li>
-<p>В папке tests создать папку api</p>
-</li>
-</ol>
-
-    </div>
-    <div class="post-footer">
-      <div class="info">
-        
-        
-      </div>
-    </div>
-
-    
-           
-    
-</div>
-
-
-                </div>
-            </div>
-        </div>
-</body>
-<script type="text/javascript" src="https://fishorfish.github.io/js/jquery.min.js"></script>
-<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="https://fishorfish.github.io/js/jquery-appear.min.js"></script><script type="text/javascript" src="https://fishorfish.github.io/js/medium-zoom.min.js"></script>
-<script>
-	mediumZoom(document.querySelectorAll('div.post-content img'), {
-        background: '#fff'
-    });
-</script>
-<link rel="stylesheet" href="https://fishorfish.github.io/css/medium-zoom.css" type="text/css"></html></body>
-
-</html>
- каждым методом добавлять аннотации: <code>@tr-suite ХХХХ</code> (id тест-сьюта) и <code>@tr-case ХХХХ</code> (id тест-кейса)</p>
+<p>В папке src/DataFixtures создать классы фикстур по названию каждой таблицы, которая ими будет заполняться. Пример названия RequestFixtures.php (таблица request)</p>
 </li>
 <li>
-<p>Войти в контейнер и запустить тест командой <code>vendor/bin/codecept run</code></p>
+<p>Все файлы фикстур делать по образу и подобию с примером, меняя названия таблиц и файлов фикстур</p>
 </li>
 <li>
-<p>Проверить отображение результатов прогона тестов в TestRail, вкладка <em>Test Runs &amp; Results</em></p>
+<p>В папке tests/fixtures создать файлы по названию каждой таблицы, которая будет ими заполняться. Пример названия request.php</p>
+</li>
+<li>
+<p>В файл фикстуры поместить возвращаемый массив с данными, которые принимает таблица.</p>
+</li>
+<li>
+<p>Перед запуском тестов запускать команду для наполнения тестовой бд фикстурами: <code>bin/console doctrine:fixtures:load --env=test --purge-with-truncate -n</code></p>
 </li>
 </ol>
 

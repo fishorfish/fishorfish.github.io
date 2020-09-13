@@ -31,6 +31,15 @@
     </item>
     
     <item>
+      <title>Codeception: подключение фикстур</title>
+      <link>https://fishorfish.github.io/post/codeception/</link>
+      <pubDate>Mon, 10 Aug 2020 13:30:10 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/codeception/</guid>
+      <description>Войти в контейнер/папку приложения и выполнить команду: composer require --dev doctrine/doctrine-fixtures-bundle</description>
+    </item>
+    
+    <item>
       <title>Канбан</title>
       <link>https://fishorfish.github.io/post/kanban/</link>
       <pubDate>Sat, 01 Aug 2020 19:30:16 +0300</pubDate>
