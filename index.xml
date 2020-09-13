@@ -6,17 +6,27 @@
     <description>Recent content on The theory of the cutlet explosion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Aug 2020 19:30:16 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 12:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fishorfish.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Codeception: installation</title>
-      <link>https://fishorfish.github.io/post/codception/</link>
-      <pubDate>Sat, 01 Aug 2020 19:30:16 +0300</pubDate>
+      <title>Codeception: подключение к TestRail</title>
+      <link>https://fishorfish.github.io/post/codeception/</link>
+      <pubDate>Sat, 15 Aug 2020 12:00:00 +0300</pubDate>
       
-      <guid>https://fishorfish.github.io/post/codception/</guid>
+      <guid>https://fishorfish.github.io/post/codeception/</guid>
+      <description>Для подключения Codeception к TestRail:
+  Выполнить команду composer require --dev bookit/codeception-testrail</description>
+    </item>
+    
+    <item>
+      <title>Codeception: подключение</title>
+      <link>https://fishorfish.github.io/post/codeception/</link>
+      <pubDate>Mon, 10 Aug 2020 13:30:10 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/codeception/</guid>
       <description>Для подключения к проекту фреймворка Codeception, необходимо выполнить несколько шагов:</description>
     </item>
     
