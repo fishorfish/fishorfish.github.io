@@ -13,49 +13,49 @@
     
     <item>
       <title>Codeception: локальный запуск тестов</title>
-      <link>https://fishorfish.github.io/post/codeception/</link>
+      <link>https://fishorfish.github.io/post/codeception-tests-run/</link>
       <pubDate>Sun, 30 Aug 2020 18:36:00 +0300</pubDate>
       
-      <guid>https://fishorfish.github.io/post/codeception/</guid>
+      <guid>https://fishorfish.github.io/post/codeception-tests-run/</guid>
       <description>Порядок действий:
   Зайти в докере в контейнер приложения (если на тестинге, что через портейнер)</description>
     </item>
     
     <item>
       <title>Codeception: подключение тестовой БД</title>
-      <link>https://fishorfish.github.io/post/codeception/</link>
+      <link>https://fishorfish.github.io/post/codeception-installation-db/</link>
       <pubDate>Tue, 25 Aug 2020 22:05:00 +0300</pubDate>
       
-      <guid>https://fishorfish.github.io/post/codeception/</guid>
+      <guid>https://fishorfish.github.io/post/codeception-installation-db/</guid>
       <description>Войти в контенер/папку с приложением
   В файле .</description>
     </item>
     
     <item>
       <title>Codeception: подключение фикстур</title>
-      <link>https://fishorfish.github.io/post/codeception/</link>
+      <link>https://fishorfish.github.io/post/codeception-installation-fixtures/</link>
       <pubDate>Thu, 20 Aug 2020 10:40:40 +0300</pubDate>
       
-      <guid>https://fishorfish.github.io/post/codeception/</guid>
+      <guid>https://fishorfish.github.io/post/codeception-installation-fixtures/</guid>
       <description>Войти в контейнер/папку приложения и выполнить команду: composer require --dev doctrine/doctrine-fixtures-bundle</description>
     </item>
     
     <item>
       <title>Codeception: подключение к TestRail</title>
-      <link>https://fishorfish.github.io/post/codeception/</link>
+      <link>https://fishorfish.github.io/post/codeception-installation-testrail/</link>
       <pubDate>Sat, 15 Aug 2020 12:00:00 +0300</pubDate>
       
-      <guid>https://fishorfish.github.io/post/codeception/</guid>
+      <guid>https://fishorfish.github.io/post/codeception-installation-testrail/</guid>
       <description>Для подключения Codeception к TestRail:
   Выполнить команду composer require --dev bookit/codeception-testrail</description>
     </item>
     
     <item>
       <title>Codeception: подключение фреймворка</title>
-      <link>https://fishorfish.github.io/post/codeception/</link>
+      <link>https://fishorfish.github.io/post/codeception-installation/</link>
       <pubDate>Mon, 10 Aug 2020 13:30:10 +0300</pubDate>
       
-      <guid>https://fishorfish.github.io/post/codeception/</guid>
+      <guid>https://fishorfish.github.io/post/codeception-installation/</guid>
       <description>Для подключения к проекту фреймворка Codeception, необходимо выполнить несколько шагов:</description>
     </item>
     
