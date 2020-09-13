@@ -79,11 +79,7 @@
 <li>
 <p>В файле codeception.yml добавить строку в params: <code>- .env.test</code></p>
 </li>
-<li>
-<p>В случае, если созданная бд не умеет читать из env=test, в файл bootstrap.php добавить:</p>
-</li>
 </ol>
-<p><code>if (!empty($_ENV['APP_ENV']) &amp;&amp; $_ENV['APP_ENV'] === 'test') { (new Dotenv())-&gt;overload(dirname(__DIR__) . '/.env.test'); }</code></p>
 
     </div>
     <div class="post-footer">
