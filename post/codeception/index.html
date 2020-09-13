@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title> Ezdakova Irina | Codeception: подключение к TestRail </title>
+    <title> Ezdakova Irina | Codeception: локальный запуск тестов </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.70.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="">
     <link rel="stylesheet" href="https://fishorfish.github.io/css/style.css" type="text/css">
@@ -53,47 +53,29 @@
     <div class="post-content">
 
       <div class="post-title">
-        <h3>Codeception: подключение к TestRail
+        <h3>Codeception: локальный запуск тестов
         </h3>
         
         <div class="info">
-          <i class="fa fa-sun-o"></i><span class="date">Sat, Aug 15, 2020</span>
+          <i class="fa fa-sun-o"></i><span class="date">Sun, Aug 30, 2020</span>
           <i class="fa fa-clock-o"></i><span class="reading-time">1-minute read</span>
         </div>
         
         </div>
 
-    <p>Для подключения Codeception к TestRail:</p>
+    <p>Порядок действий:</p>
 <ol>
 <li>
-<p>Выполнить команду <code>composer require --dev bookit/codeception-testrail </code></p>
+<p>Зайти в докере в контейнер приложения (если на тестинге, что через портейнер)</p>
 </li>
 <li>
-<p>В конфиге codeception.yml добавить настройки подключения к TestRail</p>
+<p>Если не поднята тестовая бд: <code>bin/console doctrine:database:create --env=test --if-not-exists</code></p>
 </li>
 <li>
-<p>Поменять в composer.json установленную версию <code>&quot;bookit/codeception-testrail&quot;</code> на <code>&quot;dev-master&quot;</code> → <code>composer update bookit/codeception-testrail</code></p>
+<p>Если не загружены фикстуры: <code>bin/console doctrine:fixtures:load --env=test --purge-with-truncate -n</code></p>
 </li>
 <li>
-<p>Создать в корне проекта файл .env.test и добавить в него креды от TestRail</p>
-</li>
-<li>
-<p>В случае, если composer.json не сконфигурировал автоматически autoload-dev&rdquo;, то вручную сконфигурировать в <code>composer.json: &quot;autoload-dev&quot;</code>, добавив в <code>&quot;psr-4&quot;:  &quot;Your_namespace\\Tests\\&quot;: &quot;tests/</code>&rdquo; → <code>composer dump-autoload</code></p>
-</li>
-<li>
-<p>Проверить наличие корректных неймспейсов во всех файлах папки tests</p>
-</li>
-<li>
-<p>Для вывода ссылки (при прогоне тестов) с данными о прохождении автотестов создать папку <code>tests/Extensions</code>, создать в ней файл <code>TestRailExtension.php</code></p>
-</li>
-<li>
-<p>Для слинковки тестов с тест-кейсами в TestRail над каждым методом добавлять аннотации: <code>@tr-suite ХХХХ</code> (id тест-сьюта) и <code>@tr-case ХХХХ</code> (id тест-кейса)</p>
-</li>
-<li>
-<p>Войти в контейнер и запустить тест командой <code>vendor/bin/codecept run</code></p>
-</li>
-<li>
-<p>Проверить отображение результатов прогона тестов в TestRail, вкладка <em>Test Runs &amp; Results</em></p>
+<p>Запуск тестов: <code>./vendor/bin/codecept run -vvv</code></p>
 </li>
 </ol>
 

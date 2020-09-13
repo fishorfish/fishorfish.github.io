@@ -6,10 +6,20 @@
     <description>Recent content in Posts on The theory of the cutlet explosion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2020 22:05:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2020 18:36:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fishorfish.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Codeception: локальный запуск тестов</title>
+      <link>https://fishorfish.github.io/post/codeception/</link>
+      <pubDate>Sun, 30 Aug 2020 18:36:00 +0300</pubDate>
+      
+      <guid>https://fishorfish.github.io/post/codeception/</guid>
+      <description>Порядок действий:
+  Зайти в докере в контейнер приложения (если на тестинге, что через портейнер)</description>
+    </item>
     
     <item>
       <title>Codeception: подключение тестовой БД</title>
